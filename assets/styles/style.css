@@ -212,6 +212,127 @@ h6 {
   background: rgba(255, 255, 255, 0.9);
 }
 
+.section-main {
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+
+h2, h5 {
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 43px;
+  color: rgb(13, 4, 2);
+}
+
+.section-top-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-main-left p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgb(13, 4, 2);
+  margin-top: 20px;
+}
+
+.section-main-right {
+  display: flex;
+  gap: 23px;
+}
+
+.left-pointer, .right-pointer {
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgb(255, 75, 50);
+  background: rgb(255, 75, 50);
+  border-radius: 100%;
+}
+.left-pointer img, .right-pointer img {
+  width: 15px;
+  height: 15px;
+}
+.left-pointer .rounded-corner, .right-pointer .rounded-corner {
+  height: 45px;
+  width: 44px;
+  padding: 13px 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.section-article {
+  margin-bottom: 140px;
+}
+
+.section-article-wrapper {
+  display: grid;
+  gap: 86px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards img {
+  width: 300px;
+  height: 265px;
+}
+.cards p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin: 15px 0 30px;
+}
+
+h3 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #0C0D0C;
+  margin: 35px 0 10px;
+}
+
+h4 {
+  color: #000000;
+  font-family: "Josefin Sans";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.cards-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-bottom img {
+  width: 114px;
+  height: 57px;
+}
+.cards-bottom button {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgb(255, 75, 50);
+  padding: 16px 35px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  width: 167px;
+  height: 57px;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.middle-section-top p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+}
+
 @media (max-width: 640px) {
   .header-list {
     display: none;
@@ -262,6 +383,22 @@ h6 {
   }
   .footer-wrapper {
     padding-bottom: 20px;
+  }
+  .middle-section {
+    padding: 20px;
+  }
+  .section-article-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #same-image {
+    width: 100%;
+    height: auto;
+  }
+  .cards-bottom {
+    gap: 10px;
+  }
+  .section-top-wrapper {
+    gap: 10px;
   }
 }
 @media (max-width: 460px) {

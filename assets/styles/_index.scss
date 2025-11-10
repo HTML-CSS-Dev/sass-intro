@@ -206,3 +206,140 @@ background: $black_color;
 #ruler {
     background:$gray_color;
 }
+
+
+
+// section + main
+
+.section-main {
+    margin-top: 140px;
+    margin-bottom:60px;
+}
+
+h2 {
+    font-family:$family;
+    font-weight:$flarge_width;
+    font-size:$biggest_font;
+    color:$black_color;
+}
+
+.section-top-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-main-left {
+    p {
+    font-weight:$fsmall_width;
+    font-size:$small_font;
+    line-height:160%;
+    color:$black_color;
+    margin-top:20px;
+    }
+}
+
+.section-main-right {
+    display: flex;
+    gap:23px;
+}
+
+.left-pointer {
+    width:46px;
+    height:46px;
+    border:1px solid $red_color;
+    background:$red_color;
+    border-radius:100%;
+    img {
+    width:15px;
+    height:15px;    
+    }
+
+.rounded-corner {
+    height:45px;
+    width:44px;
+    padding:13px 10px;
+    border:2px solid white;
+    border-radius: 100%;
+}
+}
+
+.right-pointer {
+    @extend .left-pointer;
+}
+
+// section article
+
+.section-article {
+    margin-bottom:140px;
+}
+
+.section-article-wrapper {
+    display: grid;
+    gap:86px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.cards {
+    img {
+    width:300px;
+    height:265px;
+    }
+
+    p {
+    font-weight:$fsmall_width;
+    font-size:$smallest_font;
+    line-height: 160%;
+    margin: 15px 0 30px;
+    }
+}
+
+h3 {
+    font-family:$family;
+    font-weight:$flarger_width;
+    font-size:$medium_font;
+    line-height: 150%;
+    color:#0C0D0C;
+    margin: 35px 0 10px;
+}
+
+h4 {
+    color:#000000;
+    font-family:$family;
+    font-weight:$flarge_width;
+    font-size:$big_font;
+    line-height:130%;
+}
+
+.cards-bottom {
+    display: flex;
+    justify-content: space-between;
+    img {
+    width: 114px;
+    height: 57px;
+    }
+
+    button {
+        @include buttons;
+        width:167px;
+        height: 57px;
+        font-size:$small_font;
+        padding: 15px 30px;
+    }
+}
+
+// middle-section
+
+h5 {
+    text-align: center;
+    @extend h2
+}
+
+.middle-section-top {
+    p {
+    font-weight:$fsmall_width;
+    font-size:$small_font;
+    line-height: 160%;
+    text-align: center;
+    }
+}

@@ -64,7 +64,32 @@ h1 {
 .footer-wrapper {
     padding-bottom:20px
 }
+
+
+// section + main,article
+.middle-section {
+    padding:20px
+} 
+    .section-article-wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+#same-image {
+    width: 100%;
+    height: auto;
 }
+
+.cards-bottom {
+    gap:10px
+}
+
+.section-top-wrapper {
+    gap:10px
+}
+
+}
+
+
 
 
 @media (max-width:460px) {
