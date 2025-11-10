@@ -75,8 +75,8 @@ h1 {
     }
 
 #same-image {
-    width: 100%;
-    height: auto;
+    width:100%;
+    height:auto;
 }
 
 .cards-bottom {
@@ -87,9 +87,53 @@ h1 {
     gap:10px
 }
 
+
+.center-section-center {
+    justify-content: center;
+    grid-template-columns: (1,1fr);
 }
 
+.img-sz {
+    height: auto;
+    width:100%;
+}
 
+.first {
+    grid-column:1/2;
+    grid-row:1/2;
+}
+
+.second {
+    grid-column:1/2;
+    grid-row:2/3;
+}
+
+.third {
+    grid-column:1/2;
+    grid-row:3/4;
+}
+
+.fourth {
+    grid-column:1/2;
+    grid-row:4/5;
+}
+
+.fifth {
+    grid-column:1/2;
+    grid-row:5/6;
+
+}
+
+.sixth {
+    grid-column:1/2;
+    grid-row:6/7;
+}
+
+.center-section-bottom {
+    width: 60%;
+}
+
+}
 
 
 @media (max-width:460px) {
@@ -119,4 +163,5 @@ button {
     font-size:10px;
     }
 }
+
 }
